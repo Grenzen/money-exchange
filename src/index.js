@@ -10,7 +10,7 @@ module.exports = function makeExchange(currency) {
             quarters = 0,
             dimes = 0,
             nickels = 0,
-            pennie = 0;
+            pennies = 0;
 
         while (currency >= 50) {
 
@@ -43,8 +43,8 @@ module.exports = function makeExchange(currency) {
         while (currency >= 1) {
 
             currency -= 1;
-            pennie += 1;
-            exchange.P = pennie;
+            pennies += 1;
+            exchange.P = pennies;
         }
     }
     return exchange;
