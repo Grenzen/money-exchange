@@ -12,7 +12,6 @@ module.exports = function makeExchange(currency) {
         for (var i = 0; i < nominalLen; i++) {
 
 	        while (currency >= 0 && currency >= +nominals[i].slice(1)) {
-                //var key = nominals[i].substring(0,1);
 		        exchange[nominals[i].substring(0,1)] = parseInt( currency/+nominals[i].slice(1) );
 	            currency = currency % +nominals[i].slice(1);
             }
