@@ -4,7 +4,6 @@ module.exports = function makeExchange(currency) {
 
     var nominals = [H50, Q25, D10, N5, P1];
     var nominalLen = nominals.length;
-    console.log("Это nominalLen" + nominalLen);
 
     for (var i = 0; i < nominalLen; i++) {
 
